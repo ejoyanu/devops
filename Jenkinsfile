@@ -25,8 +25,8 @@ node{
    }
    stage('Nexus Image Push'){
    sh "docker login -u admin -p admin123 52.194.249.44:8083"
-   sh "docker tag ejoyanu/juneproject 52.194.249.44:8083/anu:1.0.1"
-   sh 'docker push 52.194.249.44:8083/anu:1.0.1'
+   sh "docker tag ejoyanu/juneproject 52.194.249.44:8083/anu:1.0.2"
+   sh 'docker push 52.194.249.44:8083/anu:1.0.2'
    }
     stage('Remove Previous Container'){
 	try{
